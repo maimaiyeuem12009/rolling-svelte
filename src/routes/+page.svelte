@@ -1,0 +1,97 @@
+<script lang="ts">
+
+  import '../main.css'
+  import {onMount} from "svelte";
+
+  onMount(() => {
+    const body = document.body
+  })
+</script>
+
+<div data-scroll>
+    <header class="header">
+        <h1 class="header__title">Image Unroll Effects with Three.js</h1>
+        <div class="info">
+            <a class="info__link" href="https://tympanus.net/codrops/?p=46712">Article</a>
+            <a class="info__link" href="https://tympanus.net/Tutorials/FoldingDOM/">Previous demo</a>
+            <a class="info__link" href="https://github.com/akella/UnrollingImages">GitHub</a>
+        </div>
+    </header>
+    <!-- begin section -->
+    <section class="section intro">
+        <div class="intro__wrap">
+            <div class="intro__background-image">
+                <img src="./img/intro1.jpg" alt="Some image">
+                <div class="intro__title">Watson Building, Dubai, 2020</div>
+            </div>
+            <div class="intro__foreground-image">
+                <img src="./img/intro2.jpg" class="js-image" alt="Some image">
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- begin section -->
+    <section class="section dos">
+        <div class="dos__foreground">
+            <div class="meta">
+                <h3 class="meta__subtitle">– architecture</h3>
+                <h2 class="meta__title">Megalith</h2>
+            </div>
+            <div class="dos__foreground-image">
+                <img src="./img/dos1.jpg" alt="Some image">
+            </div>
+        </div>
+        <div class="dos__background">
+            <div class="dos__background-image">
+                <img src="./img/dos2.jpg" class="js-image" alt="Some image">
+            </div>
+            <div class="dos__text">
+                <p>Carlon Arc, Chicago, 2019</p>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- begin tres -->
+    <section class="section tres">
+        <div class="tres__foreground">
+            <div class="tres__foreground-image">
+                <img src="./img/tres1.jpg" class="js-image" alt="Some image">
+            </div>
+            <div class="meta">
+                <h3 class="meta__subtitle">– innovator</h3>
+                <h2 class="meta__title">Neon Plex</h2>
+            </div>
+        </div>
+        <div class="tres__background">
+            <div class="tres__background-image">
+                <img src="./img/tres2.jpg" alt="Some image">
+            </div>
+            <div class="tres__text">
+                <p>Plex Construct, Sydney, 2018</p>
+            </div>
+        </div>
+    </section>
+    <!-- end tres -->
+    <!-- begin section cuatro -->
+    <section class="section cuatro">
+        <ul>
+            <li><img src="./img/1.jpg" class="js-image" alt="Some image"></li>
+            <li><img src="./img/2.jpg" class="js-image" alt="Some image"></li>
+            <li><img src="./img/3.jpg" class="js-image" alt="Some image"></li>
+            <li><img src="./img/4.jpg" class="js-image" alt="Some image"></li>
+        </ul>
+    </section>
+    <!-- end section -->
+    <!-- begin section -->
+    <section class="section last">
+        <div class="buttons">
+            <button class="button js-change" data-angle="90">Vertical</button>
+            <button class="button js-change" data-angle="17">Angled</button>
+            <button class="button js-change" data-angle="0">Horizontal</button>
+        </div>
+        <div class="last__image">
+            <img src="./img/last.jpg" class="js-image" alt="Some image">
+        </div>
+    </section>
+</div>
+<div id="container"></div>
